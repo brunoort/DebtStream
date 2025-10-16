@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bAOoyQJfHWg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\restsharp\\112.1.0\\restsharp.112.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

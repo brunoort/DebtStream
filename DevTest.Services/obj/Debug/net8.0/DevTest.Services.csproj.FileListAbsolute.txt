@@ -1,0 +1,12 @@
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\bin\Debug\net8.0\DevTest.Services.deps.json
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\bin\Debug\net8.0\DevTest.Services.dll
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\bin\Debug\net8.0\DevTest.Services.pdb
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.csproj.AssemblyReference.cache
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.AssemblyInfoInputs.cache
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.AssemblyInfo.cs
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.dll
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\refint\DevTest.Services.dll
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.pdb
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\ref\DevTest.Services.dll

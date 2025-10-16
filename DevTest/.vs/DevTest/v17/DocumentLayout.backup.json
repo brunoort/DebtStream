@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\shared\\_dashboardmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\shared\\_dashboardmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35F3D34-EFB7-4216-8870-044ED2F4320F}|..\\DevTest.Services\\DevTest.Services.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest.services\\models\\updateemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\dashboard\\updateemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\dashboard\\updateemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35F3D34-EFB7-4216-8870-044ED2F4320F}|..\\DevTest.Services\\DevTest.Services.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest.services\\models\\updateaddressviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\dashboard\\updateaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\dashboard\\updateaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\account\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\account\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|c:\\users\\bruno\\desktop\\projetos\\devtest\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DDC0BB0-B689-4631-94B7-E1F9A6F3C086}|DevTest.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_DashboardMenu.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Shared\\_DashboardMenu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_DashboardMenu.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Shared\\_DashboardMenu.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_DashboardMenu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T22:31:44.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T22:31:41.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T22:30:45.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateEmailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\Models\\UpdateEmailViewModel.cs",
+              "RelativeDocumentMoniker": "..\\DevTest.Services\\Models\\UpdateEmailViewModel.cs",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\Models\\UpdateEmailViewModel.cs",
+              "RelativeToolTip": "..\\DevTest.Services\\Models\\UpdateEmailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T22:29:58.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateAddressViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\Models\\UpdateAddressViewModel.cs",
+              "RelativeDocumentMoniker": "..\\DevTest.Services\\Models\\UpdateAddressViewModel.cs",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\Models\\UpdateAddressViewModel.cs",
+              "RelativeToolTip": "..\\DevTest.Services\\Models\\UpdateAddressViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T22:28:58.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\UpdateEmail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\UpdateEmail.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\UpdateEmail.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\UpdateEmail.cshtml",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAowAEBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T20:36:10.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAASwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:01:58.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Account\\RegisterPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\RegisterPage.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Account\\RegisterPage.cshtml",
+              "RelativeToolTip": "Views\\Account\\RegisterPage.cshtml",
+              "ViewState": "AgIAALsAAAAAAAAAAAAowNUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T20:00:30.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwFoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T19:56:09.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T19:56:02.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateAddress.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\UpdateAddress.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\UpdateAddress.cshtml",
+              "ToolTip": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\Views\\Dashboard\\UpdateAddress.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\UpdateAddress.cshtml",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAcwNoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T19:55:48.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

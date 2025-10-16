@@ -1,0 +1,15 @@
+﻿@* Views/_DashboardMenu.cshtml *@
+<nav class="nav flex-column">
+    <a class="nav-link" href="@Url.Action("Index", "Dashboard")">
+        <i class="fas fa-home me-2"></i>Dashboard
+    </a>
+    <a class="nav-link" href="@Url.Action("UpdateAddress", "Account")">
+        <i class="fas fa-map-marker-alt me-2"></i>Update Address
+    </a>
+    <a class="nav-link" href="@Url.Action("UpdateEmail", "Account")">
+        <i class="fas fa-envelope me-2"></i>Update Email
+    </a>
+    <a class="nav-link" href="@Url.Action("Logout", "Account")">
+        <i class="fas fa-sign-out-alt me-2"></i>Logout
+    </a>
+</nav>
