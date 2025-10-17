@@ -34,3 +34,4 @@ C:\Users\Bruno\Desktop\Projetos\DevTest\obj\Debug\net8.0\DevTest.genruntimeconfi
 C:\Users\Bruno\Desktop\Projetos\DevTest\obj\Debug\net8.0\ref\DevTest.dll
 C:\Users\Bruno\Desktop\Projetos\DevTest\bin\Debug\net8.0\RestSharp.dll
 C:\Users\Bruno\Desktop\Projetos\DevTest\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Bruno\Desktop\Projetos\DevTest\obj\Debug\net8.0\DevTest.sourcelink.json

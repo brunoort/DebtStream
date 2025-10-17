@@ -4,6 +4,7 @@ using DevTest.Services.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DevTest.Controllers
 {
@@ -21,6 +22,36 @@ namespace DevTest.Controllers
         public IActionResult UpdateAddress() => View();
         public IActionResult UpdateEmail() => View();
 
+        public async Task<IActionResult> Dashboard()
+        {
+            if(ViewData["AccountInfo"] == null) { 
+
+                var accountId = HttpContext.Session.GetString("accountId");
+
+                var userResponse = await _debtApiService.GetAccount(accountId);
+
+                var accountData = new
+                {
+                    accountId = accountId, 
+                    loginTime = DateTime.Now,
+                    userData = userResponse
+                };
+
+                ViewData["AccountInfo"] = JsonConvert.SerializeObject(accountData);
+
+                var accountInfoJson = ViewData["AccountInfo"] as string;
+                AccountInfo accountInfo = JsonConvert.DeserializeObject<AccountInfo>(accountInfoJson);
+
+                var accountResponse = await _debtApiService.GetAccount(accountInfo.accountId);
+
+                ViewBag.AccountResponse = accountResponse;
+
+                return View("Dashboard");
+            } else
+            {
+                return View("Dashboard");
+            }
+        }
 
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
@@ -33,7 +64,21 @@ namespace DevTest.Controllers
                 return View();
             }
 
-            return RedirectToAction("Index", "Home");
+            HttpContext.Session.SetString("accountId", model.AccountId);
+
+            var userResponse = await _debtApiService.GetAccount(model.AccountId);
+
+            var accountInfo = new
+            {
+                accountId = model.AccountId,
+                userEmail = model.Email,
+                loginTime = DateTime.Now,
+                userData = userResponse
+            };
+
+            ViewData["AccountInfo"] = JsonConvert.SerializeObject(accountInfo);
+
+            return Json(new { redirectUrl = Url.Action("Dashboard", "Account") });
         }
 
         [HttpPost]
@@ -92,8 +137,8 @@ namespace DevTest.Controllers
 
                 HttpContext.Session.SetString("accountId", accountInfo.accountId);
 
-                TempData["AccountInfo"] = JsonConvert.SerializeObject(accountInfo);
-                return Json(new { redirectUrl = Url.Action("Index", "Dashboard") });
+                ViewData["AccountInfo"] = JsonConvert.SerializeObject(accountInfo);
+                return Json(new { redirectUrl = Url.Action("Dashboard", "Account") });
             }
 
             ModelState.AddModelError("", "Login inválido.");

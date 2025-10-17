@@ -10,6 +10,15 @@ internal class Program
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
+        // Adicionar suporte à sessão
+        builder.Services.AddDistributedMemoryCache(); // store em memória para dev
+        builder.Services.AddSession(options =>
+        {
+            options.IdleTimeout = TimeSpan.FromHours(1);
+            options.Cookie.HttpOnly = true;
+            options.Cookie.IsEssential = true;
+        });
+
         builder.Services.AddSingleton<DebtApiService>();
 
         var app = builder.Build();
@@ -24,6 +33,8 @@ internal class Program
         app.UseAuthorization();
 
         app.UseRouting();
+
+        app.UseSession();
 
         app.MapControllerRoute(
             name: "default",

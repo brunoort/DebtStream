@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Account\Dashboard.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\shared-styles.css" />
   </ItemGroup>
 

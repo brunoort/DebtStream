@@ -10,3 +10,4 @@ C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Servic
 C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\refint\DevTest.Services.dll
 C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.pdb
 C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\ref\DevTest.Services.dll
+C:\Users\Bruno\Desktop\Projetos\DevTest.Services\obj\Debug\net8.0\DevTest.Services.sourcelink.json

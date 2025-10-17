@@ -42,16 +42,33 @@ namespace DevTest.Service.Services
             request.AddBody(model);
 
             var response = await _client.ExecuteAsync(request);
+
+            //will consider conflict as true, because the user exists.
+            if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
+            {
+                return true;
+            }
+
             return response.IsSuccessful;
         }
 
-        public async Task<AccountDetails> GetAccount(string accountId, int? pageNumber = 1, int? pageSize = 20)
+        public async Task<AccountDetails> GetAccount(string accountId)
+        {
+            var request = new RestRequest("/api/account/"+ accountId);
+            request.AddHeader("X-API-Key", _apiKey);
+            request.Method = Method.Get;
+
+            var response = await _client.ExecuteAsync<AccountDetails>(request);
+            return response.IsSuccessful ? response.Data : null;
+        }
+
+        public async Task<AccountTransactions> GetAccountTransactions(string accountId, int? pageNumber = 1, int? pageSize = 20)
         {
             var request = new RestRequest("/api/account/"+ accountId +"/transactions?pageNumber="+ pageNumber +"&pageSize="+ pageSize);
             request.AddHeader("X-API-Key", _apiKey);
             request.Method = Method.Get;
 
-            var response = await _client.ExecuteAsync<AccountDetails>(request);
+            var response = await _client.ExecuteAsync<AccountTransactions>(request);
             return response.IsSuccessful ? response.Data : null;
         }
 

@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@using Newtonsoft.Json
+@{
+    var accountInfoJson = ViewData["AccountInfo"] as string;
+    dynamic accountInfo = null;
+
+    if (!string.IsNullOrEmpty(accountInfoJson))
+    {
+        accountInfo = JsonConvert.DeserializeObject(accountInfoJson);
+    }
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,81 +16,9 @@
     <title>DebtCollectionPortal - Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        .sidebar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: white;
-        }
-        .sidebar .nav-link {
-            color: rgba(255, 255, 255, 0.8);
-            padding: 12px 20px;
-            border-radius: 10px;
-            margin: 5px 0;
-            transition: all 0.3s ease;
-        }
-        .sidebar .nav-link:hover,
-        .sidebar .nav-link.active {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-        }
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .stat-card {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-        }
-        .btn-primary {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            border: none;
-            border-radius: 10px;
-        }
-        .btn-outline-primary {
-            border-color: #667eea;
-            color: #667eea;
-            border-radius: 10px;
-        }
-        .btn-outline-primary:hover {
-            background: #667eea;
-            border-color: #667eea;
-        }
-        .account-details {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-        .info-row {
-            padding: 12px 0;
-            border-bottom: 1px solid #e9ecef;
-        }
-        .info-row:last-child {
-            border-bottom: none;
-        }
-        .info-label {
-            font-weight: 600;
-            color: #6c757d;
-        }
-        .info-value {
-            color: #212529;
-        }
-    </style>
+    <link href="~/css/shared-styles.css" rel="stylesheet" />
 </head>
-<body>
+<body> 
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
@@ -91,20 +29,7 @@
                             <i class="fas fa-shield-alt me-2"></i>
                             DebtCollectionPortal
                         </h4>
-                        <nav class="nav flex-column">
-                            <a class="nav-link active" href="dashboard.html">
-                                <i class="fas fa-home me-2"></i>Dashboard
-                            </a>
-                            <a class="nav-link" href="update-address.html">
-                                <i class="fas fa-map-marker-alt me-2"></i>Update Address
-                            </a>
-                            <a class="nav-link" href="update-email.html">
-                                <i class="fas fa-envelope me-2"></i>Update Email
-                            </a>
-                            <a class="nav-link" href="index.html">
-                                <i class="fas fa-sign-out-alt me-2"></i>Logout
-                            </a>
-                        </nav>
+                        @Html.Partial("_DashboardMenu")
                     </div>
                 </div>
             </div>
@@ -115,11 +40,11 @@
                     <!-- Header -->
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <div>
-                            <h2 class="mb-1">Welcome back, John Doe</h2>
-                            <p class="text-muted mb-0">Account ID: ACC-2024-001234</p>
+                            <h2 class="mb-1">Welcome back, @accountInfo.userData.debtorInfo.firstName</h2>
+                            <p class="text-muted mb-0">Account ID: @accountInfo.userData.accountId</p>
                         </div>
                         <div class="text-end">
-                            <small class="text-muted">Last login: Today at 2:30 PM</small>
+                            <small class="text-muted">Last login: @accountInfo.userData.accountId</small>
                         </div>
                     </div>
 
@@ -129,7 +54,7 @@
                             <div class="card stat-card">
                                 <div class="card-body text-center">
                                     <i class="fas fa-pound-sign fa-2x mb-2"></i>
-                                    <h4 class="mb-1">£2,450.00</h4>
+                                    <h4 class="mb-1">£ @accountInfo.userData.debtInfo.currentBalance</h4>
                                     <p class="mb-0">Outstanding Balance</p>
                                 </div>
                             </div>
@@ -182,7 +107,7 @@
                                             <span class="info-label">Full Name:</span>
                                         </div>
                                         <div class="col-sm-8">
-                                            <span class="info-value">John Michael Doe</span>
+                                            <span class="info-value">@accountInfo.userData.debtorInfo.firstName</span><span class="info-value">@accountInfo.userData.debtorInfo.lastName</span>
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +118,7 @@
                                             <span class="info-label">Date of Birth:</span>
                                         </div>
                                         <div class="col-sm-8">
-                                            <span class="info-value">15 March 1985</span>
+                                            <span class="info-value">@accountInfo.userData.debtorInfo.dateOfBirth</span>
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +129,7 @@
                                             <span class="info-label">Email:</span>
                                         </div>
                                         <div class="col-sm-8">
-                                            <span class="info-value">john.doe@email.com</span>
+                                            <span class="info-value">@accountInfo.userData.debtorInfo.email</span>
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +140,7 @@
                                             <span class="info-label">Phone:</span>
                                         </div>
                                         <div class="col-sm-8">
-                                            <span class="info-value">+44 7700 900123</span>
+                                            <span class="info-value">@accountInfo.userData.debtorInfo.phone</span>
                                         </div>
                                     </div>
                                 </div>
@@ -227,10 +152,10 @@
                                         </div>
                                         <div class="col-sm-8">
                                             <span class="info-value">
-                                                123 Main Street<br>
-                                                Apartment 4B<br>
-                                                London, SW1A 1AA<br>
-                                                United Kingdom
+                                                @accountInfo.userData.debtorInfo.address.addressLine1<br>
+                                                @accountInfo.userData.debtorInfo.address.addressLine2<br>
+                                                @accountInfo.userData.debtorInfo.address.city, @accountInfo.userData.debtorInfo.address.postcode<br>
+                                                @accountInfo.userData.debtorInfo.address.country
                                             </span>
                                         </div>
                                     </div>
