@@ -144,6 +144,10 @@
                                     </form>
                                 </div>
                             </div>
+                            <br />
+                            <div id="errorDiv" class="alert alert-danger" style="display:none;">Error on email update.</div>
+                            <br />
+                            <div id="successDiv" class="alert alert-success" style="display:none;">Address updated</div>
                         </div>
 
                         <div class="col-lg-4">
@@ -225,8 +229,32 @@
                 contentType: 'application/json',
                 data: JSON.stringify(addressData),
                 success: function (response) {
-                    window.location.href = response.redirectUrl;
+                    console.log("sucesso " + response);
 
+                    if (!response.success) {
+                        // Show error message
+                        const errorDiv = document.getElementById("errorDiv");
+                        errorDiv.innerText = response.error || "An unexpected error occurred.";
+                        errorDiv.style.display = "block";
+
+                        // Optional: redirect if needed
+                        if (response.redirectUrl) {
+                            setTimeout(() => {
+                                window.location.href = response.redirectUrl;
+                            }, 3000); // delay to show error before redirect
+                        }
+                    } else {
+                        // Redirect on success
+                        //window.location.href = response.redirectUrl;
+                        const successDiv = document.getElementById("successDiv");
+                        successDiv.innerText = "Data Updated!";
+                        successDiv.style.display = "block";
+
+
+                        setTimeout(() => {
+                            successDiv.style.display = "none";
+                        }, 3000); 
+                    }
                 },
                 error: function (xhr) {
                     console.error(xhr.responseText);

@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="debtstream/Controllers/AccountController.cs">
+    <Files>
+      <File FileName="debtstream/Models/WebUser.cs" Line="9" Column="1" />
+      <File FileName="debtstream/Models/RegisterModel.cs" Line="4" Column="18" />
+      <File FileName="debtstream/Models/AccountDetails.cs" Line="13" Column="1" />
+      <File FileName="debtstream/Controllers/AccountController.cs" Line="9" Column="32" />
+      <File FileName="debtstream/Views/Account/Registration.cshtml" Line="207" Column="63" />
+      <File FileName="debtstream/Views/Account/Index.cshtml" Line="78" Column="50" />
+      <File FileName="debtstream/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="debtstream" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/bruno/Desktop/Projetos/debtstream/debtstream/Controllers/AccountController.cs" relfile="debtstream/Controllers/AccountController.cs" line="40" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <DisabledProjects>
+    <String>debtstream/debtstream.csproj</String>
+  </DisabledProjects>
+</Properties>

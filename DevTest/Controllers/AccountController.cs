@@ -1,10 +1,8 @@
 ﻿using DevTest.Service.Models;
 using DevTest.Service.Services;
 using DevTest.Services.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DevTest.Controllers
 {
@@ -91,13 +89,21 @@ namespace DevTest.Controllers
 
             var registerResponse = await _debtApiService.UpdateEmail(accountId, model);
 
-            if (registerResponse != true)
+            if (!registerResponse)
             {
-                ViewBag.Error = "Updated Failed";
-                return View();
+                return Json(new
+                {
+                    success = false,
+                    error = "Update failed. Please try again.",
+                    redirectUrl = Url.Action("UpdateEmail", "Account")
+                });
             }
 
-            return RedirectToAction("Index", "Home");
+            return Json(new
+            {
+                success = true,
+                redirectUrl = Url.Action("Dashboard", "Account")
+            });
         }
 
         [HttpPost]
@@ -110,17 +116,25 @@ namespace DevTest.Controllers
 
             var registerResponse = await _debtApiService.UpdateAddress(accountId, model);
 
-            if (registerResponse != true)
+            if (!registerResponse)
             {
-                ViewBag.Error = "Updated Failed";
-                return View();
+                return Json(new
+                {
+                    success = false,
+                    error = "Update failed. Please try again.",
+                    redirectUrl = Url.Action("UpdateAddress", "Account")
+                });
             }
 
-            return RedirectToAction("Index", "Home");
+            return Json(new
+            {
+                success = true,
+                redirectUrl = Url.Action("Dashboard", "Account")
+            });
         }
 
         [HttpPost]
-        public IActionResult Login([FromBody] LoginViewModel model)
+        public async Task<IActionResult> Login([FromBody] LoginViewModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
@@ -129,20 +143,35 @@ namespace DevTest.Controllers
 
             if (response.isSuccessful == true)
             {
-                var accountInfo = new { 
-                    accountId = "ACC-2024-0012345",
-                    userEmail = model.Email, 
-                    loginTime = DateTime.Now 
-                };
+                //adding this because the validateLogin api response don't match
+                //with the correcty accountId
+                if(response.AccountId == "123")
+                {
+                    response.AccountId = "ACC001";
+                }
 
-                HttpContext.Session.SetString("accountId", accountInfo.accountId);
+                HttpContext.Session.SetString("accountId", response.AccountId);
+
+                var userResponse = await _debtApiService.GetAccount(response.AccountId);
+
+                var accountInfo = new
+                {
+                    accountId = response.AccountId,
+                    userEmail = response.Email,
+                    loginTime = DateTime.Now,
+                    userData = userResponse
+                };
 
                 ViewData["AccountInfo"] = JsonConvert.SerializeObject(accountInfo);
                 return Json(new { redirectUrl = Url.Action("Dashboard", "Account") });
             }
 
-            ModelState.AddModelError("", "Login inválido.");
-            return View(model);
+            return Json(new
+            {
+                success = false,
+                error = "Login failed. Please try again.",
+                redirectUrl = Url.Action("Index", "Home")
+            });
         }
 
         public IActionResult Logout()

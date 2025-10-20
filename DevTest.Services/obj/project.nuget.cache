@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "bAOoyQJfHWg=",
+  "dgSpecHash": "50wmf4pe693R12/+s5outzdwkFIDYsQgdXXTTMBgbaSFCWI/iZM/ur/ms5SrGMyteUmgmIfbwsrX01qKaLr8pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj",
+  "projectFilePath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\restsharp\\112.1.0\\restsharp.112.1.0.nupkg.sha512"
+    "/Users/bruno/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.10/microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.extensions.primitives/9.0.10/microsoft.extensions.primitives.9.0.10.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/restsharp/112.1.0/restsharp.112.1.0.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

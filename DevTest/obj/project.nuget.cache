@@ -1,13 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "ZEV9++zKpuM=",
+  "dgSpecHash": "Llu2bMCaLhHWbQhEJPRT5BpxkzVOT8EjYk1Gspv99TA8iHIbODLfW+EOiKYkKeJ95wOGHmoKZG75AP6T7hO9pA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj",
+  "projectFilePath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\restsharp\\112.1.0\\restsharp.112.1.0.nupkg.sha512"
+    "/Users/bruno/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.10/microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.extensions.primitives/9.0.10/microsoft.extensions.primitives.9.0.10.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/restsharp/112.1.0/restsharp.112.1.0.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/bruno/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

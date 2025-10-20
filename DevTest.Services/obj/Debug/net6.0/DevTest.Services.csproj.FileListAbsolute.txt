@@ -1,0 +1,12 @@
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/bin/Debug/net6.0/DevTest.Services.deps.json
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/bin/Debug/net6.0/DevTest.Services.dll
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/bin/Debug/net6.0/ref/DevTest.Services.dll
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/bin/Debug/net6.0/DevTest.Services.pdb
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.csproj.AssemblyReference.cache
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.AssemblyInfoInputs.cache
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.AssemblyInfo.cs
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.csproj.CoreCompileInputs.cache
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.dll
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/ref/DevTest.Services.dll
+/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/Debug/net6.0/DevTest.Services.pdb

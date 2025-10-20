@@ -1,40 +1,44 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net6.0": {
       "Microsoft.Extensions.Configuration.Abstractions/9.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.10"
         },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net8.0/_._": {}
+          "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.10": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net8.0/_._": {}
+          "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets": {}
         }
       },
       "Newtonsoft.Json/13.0.4": {
@@ -53,19 +57,44 @@
       "RestSharp/112.1.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/RestSharp.dll": {
+          "lib/net6.0/RestSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/RestSharp.dll": {
+          "lib/net6.0/RestSharp.dll": {
             "related": ".xml"
           }
         }
       },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "DevTest.Services/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.10",
           "RestSharp": "112.1.0"
@@ -191,6 +220,54 @@
         "restsharp.png"
       ]
     },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "DevTest.Services/1.0.0": {
       "type": "project",
       "path": "../DevTest.Services/DevTest.Services.csproj",
@@ -198,41 +275,38 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net6.0": [
       "DevTest.Services >= 1.0.0",
       "Newtonsoft.Json >= 13.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruno\\.nuget\\packages\\": {}
+    "/Users/bruno/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj",
+      "projectUniqueName": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj",
       "projectName": "DevTest",
-      "projectPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj",
-      "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\obj\\",
+      "projectPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj",
+      "packagesPath": "/Users/bruno/.nuget/packages/",
+      "outputPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/bruno/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj": {
-              "projectPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj"
+            "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj": {
+              "projectPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj"
             }
           }
         }
@@ -241,16 +315,11 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",
@@ -268,6 +337,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -276,7 +359,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.121/RuntimeIdentifierGraph.json"
       }
     }
   }

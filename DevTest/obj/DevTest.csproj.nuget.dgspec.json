@@ -1,33 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj": {}
+    "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj": {
+    "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj",
+        "projectUniqueName": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj",
         "projectName": "DevTest.Services",
-        "projectPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\obj\\",
+        "projectPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj",
+        "packagesPath": "/Users/bruno/.nuget/packages/",
+        "outputPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bruno/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,16 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
@@ -66,42 +58,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.121/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj": {
+    "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj",
+        "projectUniqueName": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj",
         "projectName": "DevTest",
-        "projectPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\DevTest.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest\\obj\\",
+        "projectPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/DevTest.csproj",
+        "packagesPath": "/Users/bruno/.nuget/packages/",
+        "outputPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bruno/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj": {
-                "projectPath": "C:\\Users\\Bruno\\Desktop\\Projetos\\DevTest.Services\\DevTest.Services.csproj"
+              "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj": {
+                "projectPath": "/Users/bruno/Desktop/Projetos/DebtStream/DevTest.Services/DevTest.Services.csproj"
               }
             }
           }
@@ -110,16 +109,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -137,6 +131,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -145,7 +153,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.121/RuntimeIdentifierGraph.json"
         }
       }
     }
